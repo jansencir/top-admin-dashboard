@@ -1,3 +1,9 @@
 body {
     background-color: #989898; /* Darker background for working at night */
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
