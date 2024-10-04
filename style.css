@@ -56,11 +56,13 @@ body {
     box-sizing: border-box;
 }
 
+/* Main Container */
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
+/* Sidebar / Aside / Dashboard */
 .aside {
     background-color: var(--main-color-blue);
     height: 100vh;
@@ -110,12 +112,14 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
+/* Header */
 .header {
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
+/* Main Content Box */
 .main {
     background-color: silver;
     display: grid;
