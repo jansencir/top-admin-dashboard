@@ -1,6 +1,11 @@
 :root {
+    font-size: 16px;
+
     /* COLOR CODES */
     --main-color-blue: #1992D4;
+
+    /* SVG Modifications */
+    --svg-white: invert(100%);
 }
 
 body {
@@ -21,6 +26,33 @@ body {
 .aside {
     background-color: var(--main-color-blue);
     height: 100vh;
+    color: white;
+}
+
+.dashboard-header {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+}
+
+.dashboard-img {
+    height: 30px;
+    filter: var(--svg-white);
+}
+
+.dashboard-items > div {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    align-items: center;
+}
+
+.dashboard-items > div > img {
+    height: 25px;
+    filter: var(--svg-white);
+}
+
+.dashboard-items > div > p {
+    font-size: 1rem;
 }
 
 .main-content {
