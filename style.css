@@ -108,7 +108,6 @@ body {
 }
 
 /* Right-Side Content / Main-Content Box */
-
 .main-content {
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -119,6 +118,20 @@ body {
     background-color: white;
     display: grid;
     grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.header-svg {
+    height: 20px;
+}
+
+.user-image.small {
+    height: 40px;
+    border-radius: 50%;
 }
 
 /* Content Box */
