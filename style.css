@@ -1,3 +1,46 @@
+/* Fonts */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
 :root {
     font-size: 16px;
 
@@ -10,6 +53,7 @@
 
 body {
     background-color: #989898; /* Darker background for working at night */
+    font-family: "Roboto", sans-serif;
 }
 
 * {
@@ -26,13 +70,14 @@ body {
 .aside {
     background-color: var(--main-color-blue);
     height: 100vh;
-    color: white;
+    color: #ffffff;
 }
 
 .dashboard-header {
     display: grid;
     grid-template-columns: 30px auto;
     align-items: center;
+    gap: 0.6rem;
 }
 
 .dashboard-img {
