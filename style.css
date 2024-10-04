@@ -7,3 +7,52 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.aside {
+    background-color: lightskyblue;
+    height: 100vh;
+}
+
+.main-content {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main {
+    background-color: silver;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.your-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.your-projects > p {
+    background-color: aliceblue;
+}
+
+.announcement-trending {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px 10px 10px 0;
+}
+
+.announcement-trending > div {
+    background-color: darkgray;
+}
