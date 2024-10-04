@@ -62,7 +62,7 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
-/* Sidebar / Aside / Dashboard */
+/* Left-Side Content / Sidebar / Aside / Dashboard */
 .aside {
     background-color: var(--main-color-blue);
     height: 100vh;
@@ -107,6 +107,8 @@ body {
     filter: var(--svg-white);
 }
 
+/* Right-Side Content / Main-Content Box */
+
 .main-content {
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -119,7 +121,7 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-/* Main Content Box */
+/* Content Box */
 .main {
     background-color: silver;
     display: grid;
