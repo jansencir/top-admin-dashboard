@@ -1,3 +1,8 @@
+:root {
+    /* COLOR CODES */
+    --main-color-blue: #1992D4;
+}
+
 body {
     background-color: #989898; /* Darker background for working at night */
 }
@@ -14,7 +19,7 @@ body {
 }
 
 .aside {
-    background-color: lightskyblue;
+    background-color: var(--main-color-blue);
     height: 100vh;
 }
 
