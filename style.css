@@ -118,19 +118,20 @@ body {
 .header {
     background-color: #ffffff;
     display: grid;
-    grid-template-rows: 4rem 6rem;
+    grid-template-rows: 4rem 5rem;
 }
 
 .header-top {
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 3rem;
 }
 
 .search-container > form {
     display: grid;
     grid-template-columns: 2rem auto;
-    padding-left: 2rem;
 }
 
 .search-btn {
@@ -175,10 +176,11 @@ body {
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    padding-bottom: 0.4rem;
 }
 
 .user-welcome {
@@ -215,6 +217,26 @@ body {
     align-self: start;
 }
 
+.action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: end;
+}
+
+.action-buttons > button {
+    border: none;
+    background-color: #1992D4;
+    color: #ffffff;
+    font-weight: 700;
+    height: 2rem;
+    width: 5.5rem;
+    border-radius: 1rem;
+}
+
+.action-buttons > button:hover {
+    opacity: 80%;
+}
 
 /* Content Box */
 .main {
