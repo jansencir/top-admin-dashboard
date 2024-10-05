@@ -118,19 +118,19 @@ body {
 .header {
     background-color: #ffffff;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 4rem 6rem;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
 }
 
 .search-container > form {
     display: grid;
     grid-template-columns: 2rem auto;
-    align-items: center;
-    padding: 1.2rem 1rem 1rem 2.2rem;
+    padding-left: 2rem;
 }
 
 .search-btn {
@@ -153,13 +153,24 @@ body {
     background-color: var(--bg-silver);
     border: none;
     height: 1.5rem;
-    width: 75%;
+    width: 85%;
     border-radius: 0.8rem;
 }
 
+.user-container {
+    display: grid;
+    grid-template-columns: 3rem 3rem auto;
+    align-items: center;
+}
+
 .user-image.small {
-    height: 40px;
+    height: 2.4rem;
     border-radius: 50%;
+}
+
+.user-full-name {
+    font-weight: 500;
+    padding-left: 1rem;
 }
 
 .user-image.large {
