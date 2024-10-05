@@ -40,6 +40,7 @@
 
     /* COLOR CODES */
     --main-color-blue: #1992D4;
+    --bg-silver: #E2E8F0;
 
     /* SVG Modifications */
     --svg-white: invert(100%);
@@ -115,7 +116,7 @@ body {
 
 /* Header */
 .header {
-    background-color: white;
+    background-color: #ffffff;
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -131,6 +132,12 @@ body {
 
 .user-image.small {
     height: 40px;
+    border-radius: 50%;
+}
+
+
+.user-image.large {
+    height: 50px;
     border-radius: 50%;
 }
 
