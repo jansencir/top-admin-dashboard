@@ -42,6 +42,7 @@
     --main-color-blue: #1992D4;
     --bg-silver: #E2E8F0;
     --border-orange: #F0B429;
+    --shadow-clr: #CDD2D9;
 
     /* SVG Modifications */
     --svg-white: invert(100%);
@@ -133,7 +134,7 @@ body {
     background-color: #ffffff;
     display: grid;
     grid-template-rows: 4rem 5rem;
-    box-shadow: 0px 4px 3px #CDD2D9;
+    box-shadow: 0px 4px 3px var(--shadow-clr);
 }
 
 .header-top {
@@ -261,24 +262,54 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.main-header {
+.your-projects > .main-header {
     padding-top: 1.8rem;
     padding-left: 1rem;
+    font-weight: 700;
 }
 
 .project-card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 1.2rem;
     padding: 1rem;
 }
 
 .project-card {
     display: grid;
+    grid-template-rows: 3rem 6rem 3rem;
+    
     background-color: #ffffff;
     border-left: 0.5rem solid var(--border-orange);
     border-radius: 0.5rem;
-    height: 12rem;
+    box-shadow: 2px 2px 4px var(--shadow-clr);
+}
+
+.project-title {
+    grid-row: 1 / 2;
+    align-self: end;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+.project-description {
+    grid-row: 2 / 3;
+    padding: 0 1rem;
+    opacity: 50%;
+}
+
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 2.5rem);
+    grid-row: 3 / 4;
+    align-items: center;
+    justify-content: end;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-icons > img {
+    height: 1.3rem;
 }
 
 .announcement-trending {
