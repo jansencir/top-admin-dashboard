@@ -156,6 +156,7 @@ body {
     height: 1.5rem;
     width: 85%;
     border-radius: 0.8rem;
+    padding-left: 0.625rem;
 }
 
 .user-container {
