@@ -41,6 +41,7 @@
     /* COLOR CODES */
     --main-color-blue: #1992D4;
     --bg-silver: #E2E8F0;
+    --border-orange: #F0B429;
 
     /* SVG Modifications */
     --svg-white: invert(100%);
@@ -260,20 +261,24 @@ body {
     grid-template-columns: 3fr 1fr;
 }
 
-.your-projects {
-    display: grid;
-    grid-template-rows: 3rem auto;
+.main-header {
+    padding-top: 1.8rem;
+    padding-left: 1rem;
 }
 
 .project-card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem;
 }
 
 .project-card {
-    background-color: red;
+    display: grid;
+    background-color: #ffffff;
+    border-left: 0.5rem solid var(--border-orange);
+    border-radius: 0.5rem;
+    height: 12rem;
 }
 
 .announcement-trending {
