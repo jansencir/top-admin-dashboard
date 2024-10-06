@@ -43,6 +43,7 @@
     --bg-silver: #E2E8F0;
     --border-orange: #F0B429;
     --shadow-clr: #CDD2D9;
+    --announcement-border: #80808080;
 
     /* SVG Modifications */
     --svg-white: invert(100%);
@@ -282,6 +283,10 @@ body {
     background-color: #ffffff;
     border-left: 0.5rem solid var(--border-orange);
     border-radius: 0.5rem;
+}
+
+.project-card,
+.announcements-card {
     box-shadow: 2px 2px 4px var(--shadow-clr);
 }
 
@@ -312,13 +317,38 @@ body {
     height: 1.3rem;
 }
 
-.announcement-trending {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    padding: 10px 10px 10px 0;
+.announcement-trending > .main-header {
+    padding-top: 1.8rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
 }
 
-.announcement-trending > div {
-    background-color: darkgray;
+.announcements-card {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 10% 80% 10%;
+    margin-right: 1.8rem;
+    border-radius: 0.5rem;
+}
+
+.announcement-messages {
+    grid-column: 2 / 3;
+    padding: 1rem 0;
+    place-self: center;
+}
+
+.announcement-messages:not(:first-child):not(:last-child) {
+    border-top: 1px solid var(--announcement-border);
+    border-bottom: 1px solid var(--announcement-border);
+}
+
+.announcement-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.announcement-description {
+    font-size: 0.8rem;
+    opacity: 50%;
 }
