@@ -352,3 +352,31 @@ body {
     font-size: 0.8rem;
     opacity: 50%;
 }
+
+.trending-card {
+    display: grid;
+}
+
+.user-card {
+    background-color: #ffffff;
+    display: grid;
+    grid-column: 3rem auto;
+    grid-row: 1fr 1fr;
+}
+
+.user-card > img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 2.6rem;
+    border-radius: 50%;
+}
+
+.username {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.users-name {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
