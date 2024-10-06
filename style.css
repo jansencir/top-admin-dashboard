@@ -79,6 +79,17 @@ body {
     z-index: 1;
 }
 
+/* Container Positions */
+.aside {
+    position: sticky;
+    top: 0px;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+}
+
 /* Left-Side Content / Sidebar / Aside / Dashboard */
 .aside {
     background-color: var(--main-color-blue);
@@ -388,18 +399,4 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     opacity: 50%;
-}
-
-.container {
-    position: relative;
-}
-
-.aside {
-    position: sticky;
-    top: 0px;
-}
-
-.header {
-    position: sticky;
-    top: 0px;
 }
